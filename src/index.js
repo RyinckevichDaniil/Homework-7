@@ -1,7 +1,7 @@
 function odd(arr) {
     let result = [];
     for (let index = 0; index < arr.length; index++) {
-        if(arr[i] % 2 == 1) {
+        if(arr[index] % 2 == 1) {
             result.push(arr[index]);
         } else {
             continue;
@@ -15,7 +15,7 @@ function even(arr) {
     let result = [];
     for (let index = 0; index < arr.length; index++) {
         if(arr[index] % 2 == 0) {
-            result.push(arr[i]);
+            result.push(arr[index]);
         } else {
             continue;
         }
