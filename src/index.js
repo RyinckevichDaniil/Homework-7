@@ -26,20 +26,22 @@ function even(arr) {
 
 function flat(arr) {
     result = [];
-    for (let index = 0; index < arr.length; index++) {
+    if(result = []) {
+        for (let index = 0; index < arr.length; index++) {
 
-        if(typeof arr[index] === 'number') {
-            result.push(arr[index])
-
-        } else {
-
-            for (let j = 0; j < arr[index].length; j++) {
-                result.push(arr[index][j]);
-
+            if(typeof arr[index] === 'number') {
+                result.push(arr[index])
+    
+            } else {
+    
+                for (let j = 0; j < arr[index].length; j++) {
+                    result.push(arr[index][j]);
+    
+                }
             }
         }
+        return result;
     }
-    return result;
 }
 
 const array =[
