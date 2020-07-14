@@ -27,7 +27,7 @@ function even(arr) {
 function flat(arr) {
     result = [];
         for (let index = 0; index < arr.length; index++) {
-            if(Array.isArray (array[index])) {
+            if(Array.isArray (arr[index])) {
                 if(typeof arr[index] === 'number') {
                     result.push(arr[index])
         
